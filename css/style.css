@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+:root{
+    --blue: #061B6D;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-template-columns: repeat(5, 1fr);
+}
+
+section{
+    padding: 90px;
+}
+
+h1{
+    text-align: right;
+}
+
+h2{
+    text-align: center;
+}
+
+
+#left__side{
+    grid-column: span 1;
+    background-color: var(--blue);
+    padding: 15px;
+}
+
+.left__title{
+    color: #eef;
+    border-bottom: 1px solid #eef;
+}
+
+.right__side{
+    grid-column: span 3;
+}
+
+#info__section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border: 1.5px solid var(--blue);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#info__section img{
+    width: 95%;
+}
+
+
+#image__info h3{
+    font-size: 1.8rem;
+}
+
+#item__info__second{
+    margin-top: 3.5rem;
+}
+
+#terms__buttons{
+    width: 75%;
+    border: 1.5px solid var(--blue);
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 8px;
+}
+
+.term__button__item{
+    display: inline-block;
+    width: 90%;
+    padding-bottom: 1.25rem;
+}
+
+.term__button__item button{
+    float: right;
+    background: none;
+    padding: .75rem;
+    border-radius: .5rem;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.term__button__item button:hover{
+    background-color: var(--blue);
+    color: #fff;
+    transition: .25s;
+}
+
+.terms__title{
+    font-size: 1.35rem;
+}
+
